@@ -1,0 +1,94 @@
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+#calendarFrame {
+  display: block;
+  background-color: rgb(48, 144, 177);
+  color: black;
+  height: 100%;
+  width: 100%;
+}
+
+.yearChooser {
+  width: 40%;
+  max-width: 400px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chosenYear {
+  display: inline;
+}
+
+.month{
+  background-color: rgb(173, 216, 230);
+
+}
+
+.month:nth-child(2n){
+  background-color: rgb(148, 209, 230);
+}
+
+.month:hover {
+  background-color: rgb(133, 191, 211);
+}
+
+.MonthName {
+  font-size: 0.8em;
+  font-weight: 900;
+}
+
+.DayContainer{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start ;
+}
+
+.day {
+  display: flex;
+  justify-content: space-around;
+
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 0.7em;
+
+  margin: 3px 1px;
+
+  min-width: 30px;
+  width: 4%;
+  max-width: 45px;
+
+  min-height: 30px;
+  height: 10%;
+
+  background-color: rgb(224, 224, 224);
+
+}
+
+.日 {
+  color: rgb(223, 21, 21);
+}
+
+.day:hover {
+  background-color: rgb(236, 182, 182);
+}
+
+.dayName {
+  display: inline;
+  font-size: 1.8em;
+}
+
+.dayNumber {
+  display: inline;
+}
